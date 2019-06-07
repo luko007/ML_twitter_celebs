@@ -1,5 +1,5 @@
 import itertools
-import matplotlib as plt
+import matplotlib.pyplot as plt
 import numpy as np
 
 # Plots a static all-feature-heatmap connecting scores between all features
@@ -58,7 +58,10 @@ Arnold schwarzenegger       0.88      0.84      0.86       637
     plt.xlabel('Accuracy')
     plt.tight_layout()
 
-def main_plot_class_rep(classificationReport):
-    plot_classification_report (classificationReport)
-    plt.savefig('test_plot_classif_report.png', dpi=200, format='png', bbox_inches='tight')
+def main_plot_class_rep():
+    plot_classification_report ()
+    plt.savefig('test_plot_classif_report.png', dpi=100, format='png', bbox_inches='tight')
+
+if __name__ == "__main__":
+    main_plot_class_rep()
 
