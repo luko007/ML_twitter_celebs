@@ -16,3 +16,5 @@ Donald Trump, Joe Biden, Conan O'brien, Ellen Degeneres, Kim Kardashian, Lebron 
 Data was provided by HUJI IML staff.
 
 Learner was built as a team effort in a HUJI Hackathon.
+
+### Classification report

@@ -4,9 +4,7 @@ View README for explanation
 '''
 
 import pandas as pd
-import numpy as np
 import glob
-import matplotlib.pyplot as plt
 from sklearn.linear_model import LogisticRegression, SGDClassifier
 from sklearn import model_selection
 import os
@@ -109,7 +107,7 @@ def naive_bayes(X_train, y_train, X_test, y_test, tags):
     return fit_and_predict(X_train, y_train, X_test, y_test, tags, nb)
 
 
-# SGD with SVM
+# SVM with SGD
 def support_vector_machine(X_train, y_train, X_test, y_test, tags):
     # without CV
     lin_vec_machine = Pipeline([
