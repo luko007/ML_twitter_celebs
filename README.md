@@ -18,3 +18,5 @@ Data was provided by HUJI IML staff.
 Learner was built as a team effort in a HUJI Hackathon.
 
 ### Classification report
+![Classification report for the above celebrities](https://github.com/luko007/ML_twitter_celebs/blob/master/test_plot_classif_report.png)
+
