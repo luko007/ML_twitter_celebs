@@ -39,11 +39,7 @@ def main():
     trainX, testX, trainY, testY = model_selection.train_test_split (data['tweet'], data['user'],
                                                                      test_size=0.2, shuffle=True)
     # model trainer and model selection
-    model, testX, testY = learner(trainX, testX, trainY, testY, tags)
-
-    y_pred = model.predict(testX)
-    accuracy = accuracy_score(y_pred, testY)
-    print('accuracy from file: %s' % accuracy)
+    learner(trainX, testX, trainY, testY, tags)
 
 
 def clean_text(data):
@@ -104,6 +100,7 @@ def naive_bayes(X_train, y_train, X_test, y_test, tags):
                     ('tfidf', TfidfTransformer ()),
                     ('clf', MultinomialNB ()),
                     ])
+    print("Multinomial NB")
     return fit_and_predict(X_train, y_train, X_test, y_test, tags, nb)
 
 
@@ -117,8 +114,8 @@ def support_vector_machine(X_train, y_train, X_test, y_test, tags):
                                                      alpha=1e-5, random_state=41,n_jobs=-1,
                                                      max_iter=500, tol=None)),
                                ])
-
     sample_report = fit_and_predict(X_train, y_train, X_test, y_test, tags, lin_vec_machine)[1]
+    print("SVM with SGD, penalty is elasticnet, alpha=1e-5")
     return fit_and_predict(X_train, y_train, X_test, y_test, tags, lin_vec_machine), lin_vec_machine
 
 
@@ -130,6 +127,7 @@ def logistic_regression(X_train, y_train, X_test, y_test, tags):
                     # ('feat_select', SelectKBest(k = 30000)),
                     ('clf', LogisticRegression(n_jobs=1, C=1e6, multi_class='multinomial', solver='saga')),
                     ])
+    print("Logistic Regression, solver=saga, c=1e6")
     return fit_and_predict(X_train, y_train, X_test, y_test, tags, log_reg)
 
 
