@@ -4,7 +4,7 @@ Given a dataset of tweets posted on twitter by certain peoples, learner predicts
 
 ### Learner
 Many learners were tested, such as Random Forest, KNN, Logistic Regression, SVM, Naive Bayes, with and without cross validation.
-In the end, the chosen learner was SVM with SGD training (sk-learn implementation) and achieves accuracy of 0.84+.
+In the end, the chosen learner was SVM with SGD training (sk-learn implementation) that achieves accuracy of 0.84+.
 The data is pre-processed with CountVectorizer and TfidfTransformer in a Bag of Words representation after it
 was 'cleaned' to achieve the best result.
 
