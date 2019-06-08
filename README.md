@@ -9,7 +9,7 @@ The data is pre-processed with CountVectorizer and TfidfTransformer in a Bag of 
 was 'cleaned' to achieve the best result.
 
 ### Data
-The learner was provided with the following 10 celebrities: 
+The learner was provided with tweets from the following 10 celebrities: 
 Donald Trump, Joe Biden, Conan O'brien, Ellen Degeneres, Kim Kardashian, Lebron James,
  Lady Gaga, Cristiano Ronaldo, Jimmy Kimmel and Arnold Schwarzenegger.
 
