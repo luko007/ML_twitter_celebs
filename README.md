@@ -19,5 +19,4 @@ Learner was built as a team effort in a HUJI Hackathon.
 
 ### Classification report
 Different scoring between all classes
-![Classification report for the above celebrities](https://github.com/luko007/ML_twitter_celebs/blob/master/test_plot_classif_report.png)
-
+![Classification report for the above celebrities](https://github.com/luko007/ML_twitter_celebs/blob/master/src/test_plot_classif_report.png)
